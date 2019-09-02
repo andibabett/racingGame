@@ -32,6 +32,15 @@ public class Vehicle {
         System.out.println("Remaining fuel" + fuelLevel);
 
 
+        ///incrementing/discrementing by 1
+       // fuelLevel = fuelLevel+1
+        // fuelLevel += 1;
+        // fuelLevel++;
+
+
+
+
+
         return distance;
 
 

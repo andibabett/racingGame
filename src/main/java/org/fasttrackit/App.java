@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import org.w3c.dom.ls.LSOutput;
+
 /**
  * Hello world!
  *
@@ -44,8 +46,13 @@ public class App
         car2.fuelType = "Gasoline";
 
         car.name = "Skoda";
-
+        car = car2
 //        car.name = null;
+
+        System.out.println("Modulo exemples");
+        System.out.println(4 % 2);
+        System.out.println(4 % 2);
+
 
                 //concatenation
         System.out.println("Car2 name: " + car2.name);

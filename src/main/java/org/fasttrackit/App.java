@@ -6,23 +6,21 @@ package org.fasttrackit;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) {
 
 
-       Car car = new Car();
+
+        Engine engine = new Engine();
+        engine.manufacturer = "Renault";
+        engine.capacity = 1600;
+
+       Car car = new Car(engine);
        car.name = "Dacia";
        car.fuelLevel = 60;
        car.mileage = 8.5;
        car.doorCount = 5;
        car.maxSpeed = 180;
        car.fuelType = "Gasoline";
-
-       Engine engine = new Engine();
-        engine.manufacturer = "Renault";
-       engine.capacity = 1600;
-
-       car.engine = engine;
 
 
         System.out.println(car.name);
@@ -33,9 +31,11 @@ public class App
 
         car.accelerate(60, 1);
 
+        Engine engine2 = new Engine();
+        engine.manufacturer = "VW";
+        engine.capacity = 1600;
 
-
-        Car car2 = new Car();
+        Car car2 = new Car(engine2);
         car2.name = "Golf";
         car2.fuelLevel = 50;
         car2.mileage = 9;
@@ -51,7 +51,7 @@ public class App
         System.out.println("Car2 name: " + car2.name);
         System.out.println("Car1 name: " + car.name);
 
-        car = car2;
+
 
 
 

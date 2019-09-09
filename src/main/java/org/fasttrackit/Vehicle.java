@@ -16,7 +16,11 @@ public class Vehicle {
     public Vehicle() {
         totalCount++;
     }
+//overload cele 2 public
+    public double accelerate(double speed){
+        return accelerate(speed,  1);
 
+    }
 
     //semnatura metodei
     public double accelerate(double speed, double durationInHours) {

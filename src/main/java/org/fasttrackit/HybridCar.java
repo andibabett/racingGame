@@ -22,7 +22,9 @@ public class HybridCar extends Vehicle{
 //    co-variant return type
     @Override
     protected HybridCar clone() throws CloneNotSupportedException {
-        return new HybridCar()
+        return new HybridCar();
+
+
     }
 }
 

@@ -75,10 +75,20 @@ public class App
 //        System.out.println("Total count in car2: " + car2.totalCount);
 //        System.out.println("Total count in Car class: "+ Car.totalCount);
 
- HybridCar hybridCar = new HybridCar();
+ Vehicle hybridCar = new HybridCar();
  hybridCar.setName("Cheater!!!");
+
+// method implemention from objects class not from variables class
  hybridCar.accelerate(60,1);
         System.out.println("Fuel level: " + hybridCar.getFuelLevel());
         System.out.println("Travel distance " + hybridCar.getTravelDistance());
+
+//    variable type decides what methods can be invoked#
+//        type casting
+        (HybridCar) hybridCar.fly();
+
+
     }
+
+
 }

@@ -17,6 +17,7 @@ public class Vehicle {
         totalCount++;
     }
 
+
     //semnatura metodei
     public double accelerate(double speed, double durationInHours) {
         //corpul metodei/implementarea metodei

@@ -10,14 +10,33 @@ public class Game {
 
 
     public void start();
+    //23.09.2019
 
     {
+
+        Track selectedTrack = getSelectedTrackFromUser();
+
+    }
+
+    private Track getSelectedTrackFromUser() {
+        System.out.println("Please select a track");
+        Scanner scanner = new Scanner(System.in);
+
+        int userChoise;
+
+        try {
+            int userChoise = scanner.nextInt();
+            return tracks(userChoise - 1);
+        } catch (InputMismatchException | ArrayIndexOutOfBoundsException) {
+            System.out.println("You have entered an invalid number.");
+            //recursion - a method calling itself
+            return getSelectedTrackFromUser();
+        }
 
 
     }
 
 
-    //23.09.2019
     private int getCompetitorCountFromUser() throws Exception {
         System.out.println("Please enter number of players");
         Scanner scanner = new Scanner(System.in);

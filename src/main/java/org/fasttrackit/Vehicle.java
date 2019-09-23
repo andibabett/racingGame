@@ -5,20 +5,21 @@ public class Vehicle {
     private static int totalCount;
 
 
-   private String name;
-   private double mileage;
-   private double maxSpeed;
-   private String fuelType;
-   private double fuelLevel;
-   private double travelDistance;
-   private boolean running;
+    private String name;
+    private double mileage;
+    private double maxSpeed;
+    private String fuelType;
+    private double fuelLevel;
+    private double travelDistance;
+    private boolean running;
 
     public Vehicle() {
         totalCount++;
     }
-//overload cele 2 public
-    public double accelerate(double speed){
-        return accelerate(speed,  1);
+
+    //overload cele 2 public
+    public double accelerate(double speed) {
+        return accelerate(speed, 1);
 
     }
 
@@ -32,9 +33,9 @@ public class Vehicle {
             System.out.println("Maximum speed exceeded");
             return 0;
         }
-            if (fuelLevel <=0) {
-                System.out.println("You are out of fuel!");
-                return 0;
+        if (fuelLevel <= 0) {
+            System.out.println("You are out of fuel!");
+            return 0;
         }
 
         double distance = speed + durationInHours;
@@ -52,12 +53,9 @@ public class Vehicle {
 
 
         ///incrementing/discrementing by 1
-       // fuelLevel = fuelLevel+1
+        // fuelLevel = fuelLevel+1
         // fuelLevel += 1;
         // fuelLevel++;
-
-
-
 
 
         return distance;
@@ -106,8 +104,6 @@ public class Vehicle {
 
     public String getName() {
         return name;
-
-
     }
 
     public void setName(String name) {
@@ -138,4 +134,11 @@ public class Vehicle {
                 ", running=" + running +
                 '}';
     }
+
+
+//23.09.2019
+
+
 }
+
+

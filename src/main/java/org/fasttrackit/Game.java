@@ -18,16 +18,13 @@ public class Game {
 
 
     //23.09.2019
-    private int getCompetitorCountFromUser() {
+    private int getCompetitorCountFromUser() throws Exception {
         System.out.println("Please enter number of players");
         Scanner scanner = new Scanner(System.in);
         try {
             return scanner.nextInt();
         } catch (InputMismatchException e) {
-            throw new RuntimeException("You have entered an invalid number");
-        } catch (NullPointerException e) {
-            System.out.println("Sorry");
-
+            throw new Exception("You have entered an invalid number");
         } finally {
             System.out.println("Finally block is always executed.");
         }

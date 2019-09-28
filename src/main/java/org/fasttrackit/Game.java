@@ -9,6 +9,7 @@ public class Game {
     private Vehicle competitor2;
 
 
+
     public void start();
     //23.09.2019
 
@@ -17,6 +18,8 @@ public class Game {
         Track selectedTrack = getSelectedTrackFromUser();
 
     }
+
+
 
     private Track getSelectedTrackFromUser() {
         System.out.println("Please select a track");
